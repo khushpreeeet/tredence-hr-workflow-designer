@@ -253,4 +253,4 @@ interface ComplexityScore {
 
 ---
 
-*Built by Khushpreet — Tredence Studio AI Agents Engineering Internship 2025*
+*Built by Khushpreet — Tredence Studio AI Agents Engineering Internship 2026*
