@@ -7,12 +7,12 @@
 ## Quick Start
 
 ```bash
-# Clone / unzip the project, then:
+
 npm create vite@latest hr-workflow -- --template react
 cd hr-workflow
 npm install
-# Replace src/App.jsx with HRWorkflowDesigner.jsx
-# Remove the default App.css / index.css imports if present
+
+
 npm run dev
 ```
 
@@ -82,8 +82,8 @@ HRWorkflowDesigner.jsx
 
 ### Beyond Spec (Differentiating Features)
 
-#### 1. Natural Language → Workflow Generation (`✨ Generate`)
-Click **✨ Generate** in the topbar. Type a plain-English description of any HR process. The app calls the Anthropic Claude API and parses the response into a fully-formed node graph — complete with positions, types, labels, and edges — which is instantly loaded onto the canvas.
+#### 1. Natural Language → Workflow Generation (` Generate`)
+Click ** Generate** in the topbar. Type a plain-English description of any HR process. The app calls the Anthropic Claude API and parses the response into a fully-formed node graph — complete with positions, types, labels, and edges — which is instantly loaded onto the canvas.
 
 > *"A performance review where an employee submits self-assessment, manager reviews, HR approves the final rating, then the system sends a confirmation email"*
 > → generates a 5-node workflow automatically.
@@ -106,14 +106,14 @@ Every time a node's data is updated, the previous state is pushed to a per-node 
 
 #### 5. Workflow Templates Library
 Three pre-built, production-realistic HR workflows:
-- 🚀 **Employee Onboarding** (parallel document collection + approval)
-- 🏖 **Leave Approval** (sequential with parallel calendar + Slack notifications)
-- 👋 **Offboarding** (parallel exit interview + asset retrieval → access revocation)
+-  **Employee Onboarding** (parallel document collection + approval)
+- 🏖**Leave Approval** (sequential with parallel calendar + Slack notifications)
+-  **Offboarding** (parallel exit interview + asset retrieval → access revocation)
 
 Load any template in one click. Templates are defined as plain JS objects — trivially extensible.
 
 #### 6. AI: Suggest Next Step
-The sidebar **✨ AI: Suggest Next** button sends the current workflow summary to Claude and returns a concrete, actionable suggestion: node type, label, and rationale. Context-aware — it reads the actual current graph.
+The sidebar ** AI: Suggest Next** button sends the current workflow summary to Claude and returns a concrete, actionable suggestion: node type, label, and rationale. Context-aware — it reads the actual current graph.
 
 ---
 
